@@ -10,11 +10,12 @@ const addBook = async (req, res) => {
 
         console.log(result)
         res.status(201).json({
-            msg: "Book added to database successfully",
+            message: "Book added to database successfully",
             book: result
         })
     } catch (error) {
-        console.log(error);
+        console.log(error.errors[0]);
+        res.status(418).json({msg: "Error: see error code", error: error})
     }
 }
 
