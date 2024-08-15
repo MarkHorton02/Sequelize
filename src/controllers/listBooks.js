@@ -6,7 +6,7 @@ const listBooks = async (req, res) => {
 
     console.log(result);
     res.status(201).json({
-      message: "Book added to database successfully",
+      message: "Books currently in database:",
       book: result,
     });
   } catch (error) {
