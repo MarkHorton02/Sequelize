@@ -23,7 +23,7 @@ bookRouter.put("/updateAuthor", updateAuthor);
 // Update genre [UPDATE]
 bookRouter.put("/updateGenre", updateGenre);
 
-// // Remove book [DELETE]
-// bookRouter.delete("/delBook", delBook);
+// Remove book [DELETE]
+bookRouter.delete("/delBook", delBook);
 
 module.exports = bookRouter;

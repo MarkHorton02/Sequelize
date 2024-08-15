@@ -4,7 +4,6 @@ const listBooks = async (req, res) => {
   try {
     const result = await Book.findAll({});
 
-    console.log(result);
     res.status(201).json({
       message: "Books currently in database:",
       book: result,
