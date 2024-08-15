@@ -1,15 +1,5 @@
 const Book = require("../db/models/bookmodel");
 
-const listBooks = async (req, res) => {
-    await
-}
-
-
-
-
-
-
-
-
+const listBooks = async (req, res) => {};
 
 module.exports = listBooks;
