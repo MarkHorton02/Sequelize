@@ -1,13 +1,9 @@
 const Router = require("express");
 const authorRouter = Router();
 
-const addAuthor = require("../controllers/addAuthor");
-const listBooksFromAuthor = require("../controllers/listBooksFromAuthor");
+// const addAuthor = require("../controllers/addAuthor");
 
 // // Add author [CREATE]
 // authorRouter.post("/addAuthor", addAuthor);
-
-// // List books from specified author [READ]
-// authorRouter.get("/listBooksFromAuthor", listBooksFromAuthor);
 
 module.exports = authorRouter;

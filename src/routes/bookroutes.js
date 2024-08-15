@@ -3,6 +3,7 @@ const bookRouter = Router();
 
 const addBook = require("../controllers/addBook");
 const listBooks = require("../controllers/listBooks");
+const listBooksFromAuthor = require("../controllers/listBooksFromAuthor");
 const updateAuthor = require("../controllers/updateAuthor");
 const updateGenre = require("../controllers/updateGenre");
 const delBook = require("../controllers/delBook");
@@ -12,6 +13,9 @@ bookRouter.post("/addBook", addBook);
 
 // List books [READ]
 bookRouter.get("/listBooks", listBooks);
+
+// List books by author [READ]
+bookRouter.get("/listBooksFromAuthor", listBooksFromAuthor);
 
 // // Update author [UPDATE]
 // bookRouter.put("/updateAuthor", updateAuthor);
