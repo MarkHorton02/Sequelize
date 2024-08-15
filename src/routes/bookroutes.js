@@ -17,11 +17,11 @@ bookRouter.get("/listBooks", listBooks);
 // List books by author [READ]
 bookRouter.get("/listBooksFromAuthor", listBooksFromAuthor);
 
-// // Update author [UPDATE]
-// bookRouter.put("/updateAuthor", updateAuthor);
+// Update author [UPDATE]
+bookRouter.put("/updateAuthor", updateAuthor);
 
-// // Update genre [UPDATE]
-// bookRouter.put("/updateGenre", updateGenre);
+// Update genre [UPDATE]
+bookRouter.put("/updateGenre", updateGenre);
 
 // // Remove book [DELETE]
 // bookRouter.delete("/delBook", delBook);

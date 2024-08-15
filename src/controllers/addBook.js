@@ -8,7 +8,6 @@ const addBook = async (req, res) => {
       genre: req.body.genre,
     });
 
-    console.log(result);
     res.status(201).json({
       message: "Book added to database successfully",
       book: result,
