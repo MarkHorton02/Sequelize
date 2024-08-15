@@ -13,13 +13,13 @@ bookRouter.post("/addBook", addBook);
 // List books [READ]
 bookRouter.get("/listBooks", listBooks);
 
-// Update author [UPDATE]
-bookRouter.put("/updateAuthor", updateAuthor);
+// // Update author [UPDATE]
+// bookRouter.put("/updateAuthor", updateAuthor);
 
-// Update genre [UPDATE]
-bookRouter.put("/updateGenre", updateGenre);
+// // Update genre [UPDATE]
+// bookRouter.put("/updateGenre", updateGenre);
 
-// Remove book [DELETE]
-bookRouter.delete("/delBook", delBook);
+// // Remove book [DELETE]
+// bookRouter.delete("/delBook", delBook);
 
 module.exports = bookRouter;
