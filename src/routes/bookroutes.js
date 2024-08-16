@@ -1,13 +1,13 @@
 const Router = require("express");
 const bookRouter = Router();
 
-const addBook = require("../controllers/addBook");
-const listBooks = require("../controllers/listBooks");
-const listBooksFromAuthor = require("../controllers/listBooksFromAuthor");
-const updateAuthor = require("../controllers/updateAuthor");
-const updateGenre = require("../controllers/updateGenre");
-const delBook = require("../controllers/delBook");
-const listABookFromAuthor = require("../controllers/listABookFromAuthor");
+const addBook = require("../controllers/Books_table/addBook");
+const listBooks = require("../controllers/Books_table/listBooks");
+const listBooksFromAuthor = require("../controllers/Books_table/listBooksFromAuthor");
+const updateAuthor = require("../controllers/Books_table/updateAuthor");
+const updateGenre = require("../controllers/Books_table/updateGenre");
+const delBook = require("../controllers/Books_table/delBook");
+const listABookFromAuthor = require("../controllers/Books_table/listABookFromAuthor");
 
 // Add book [CREATE]
 bookRouter.post("/addBook", addBook);
