@@ -1,4 +1,4 @@
-const Book = require("../db/models/bookmodel");
+const Book = require("../../db/models/bookmodel");
 
 const listABookFromAuthor = async (req, res) => {
   try {
