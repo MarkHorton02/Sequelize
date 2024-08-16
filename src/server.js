@@ -8,8 +8,8 @@ app.use(express.json());
 const bookRouter = require("./routes/bookroutes");
 const authorRouter = require("./routes/authorroutes");
 
-app.use(authorRouter);
 app.use(bookRouter);
+app.use(authorRouter);
 
 // Models: formatting (fields) of the books and authors tables
 const Book = require("./db/models/bookmodel");

@@ -3,12 +3,12 @@ const Author = require("../../db/models/authormodel");
 const delAuthor = async (req, res) => {
   try {
     const result = await Author.destroy({
-      where: {name: req.body.name}
+      where: { name: req.body.name },
     });
 
     res.status(201).json({
-      message: "Author removed from database successfully",
-      author: result,
+      message: `Author ${req.body.name} removed from database successfully`,
+      book: result,
     });
   } catch (error) {
     console.log(error.errors[0]);

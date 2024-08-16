@@ -3,7 +3,7 @@ const Book = require("../../db/models/bookmodel");
 const delBook = async (req, res) => {
   try {
     const result = await Book.destroy({
-      where: {title: req.body.title}
+      where: { title: req.body.title },
     });
 
     res.status(201).json({

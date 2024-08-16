@@ -7,7 +7,7 @@ const addAuthor = async (req, res) => {
     });
 
     res.status(201).json({
-      message: "Author added to database successfully",
+      message: `Author ${req.body.name} added to database successfully`,
       author: result,
     });
   } catch (error) {

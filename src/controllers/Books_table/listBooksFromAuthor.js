@@ -3,9 +3,9 @@ const Book = require("../../db/models/bookmodel");
 const listBooksFromAuthor = async (req, res) => {
   try {
     const result = await Book.findAll({
-        where: {
-            author: req.body.author,
-        }
+      where: {
+        author: req.body.author,
+      },
     });
 
     console.log(result);
