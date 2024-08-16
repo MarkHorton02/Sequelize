@@ -7,6 +7,7 @@ const listBooksFromAuthor = require("../controllers/listBooksFromAuthor");
 const updateAuthor = require("../controllers/updateAuthor");
 const updateGenre = require("../controllers/updateGenre");
 const delBook = require("../controllers/delBook");
+const listABookFromAuthor = require("../controllers/listABookFromAuthor");
 
 // Add book [CREATE]
 bookRouter.post("/addBook", addBook);
@@ -14,7 +15,10 @@ bookRouter.post("/addBook", addBook);
 // List books [READ]
 bookRouter.get("/listBooks", listBooks);
 
-// List books by author [READ]
+// List a book by author [READ]
+bookRouter.get("/listABookFromAuthor", listABookFromAuthor);
+
+// List all books by author [READ]
 bookRouter.get("/listBooksFromAuthor", listBooksFromAuthor);
 
 // Update author of a given book [UPDATE]
