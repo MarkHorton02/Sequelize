@@ -14,10 +14,12 @@ app.use(authorRouter);
 // Models: formatting (fields) of the books and authors tables
 const Book = require("./db/models/bookmodel");
 const Author = require("./db/models/authormodel");
+const Genre = require("./db/models/genremodel");
 
 const syncTables = () => {
   Book.sync({ alter: true });
   Author.sync({ alter: true });
+  Genre.sync({ alter: true });
 };
 
 const port = process.env.PORT || 5001;
