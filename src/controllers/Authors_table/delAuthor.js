@@ -8,7 +8,7 @@ const delAuthor = async (req, res) => {
 
     res.status(201).json({
       message: `Author ${req.body.name} removed from database successfully`,
-      book: result,
+      author: result,
     });
   } catch (error) {
     console.log(error.errors[0]);
